@@ -26,7 +26,6 @@ const QueryFrom = () => {
                           </Form>
                           <div className="submit-btn">
                               <div class="button-container">
-                                  <span class="mas">Submit</span>
                                   <button id='work' type="button" name="Hover">Submit</button>
                               </div>
                           </div>

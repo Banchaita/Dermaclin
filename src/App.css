@@ -27,7 +27,7 @@ a{
   display: inline;
 } 
 .header-contact .contact-div .top-contact .g-li a{
-  color: #fff;
+  color: #fff !important;
   font-size: 14px;
 }
 .header-contact .contact-div .top-contact .g-li img{
@@ -59,15 +59,27 @@ a{
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
+.nav-item .nav-item-link a{
+  color: #737373 !important;
+}
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
   color: #737373 !important;
-  margin-top: -9px;
+  /* margin-top: -9px; */
 }
 .dropdown-menu.show {
   display: block;
   width: 500px !important;
   background:#5C5D5D;
 }
+
+.dropdown-menu.show:nth-of-type(3) {
+  width: 250px !important; /* Adjust width as needed */
+  background: #5C5D5D;
+}
+
+
+
 .navbar-light .navbar-nav .show>.nav-link {
   color: #fff;
   background-color: #000 !important;
@@ -83,7 +95,7 @@ a{
 .navbar-nav .nav-link {
   padding-right: 0;
   padding-left: 0;
-  font-size: 14px !important;
+  font-size: 14px;
   font-weight: 600 !important;
   text-transform: uppercase !important;
 }
@@ -102,7 +114,7 @@ a{
   text-decoration: none;
   white-space: nowrap;
   border: 0;
-  font-size: 14px !important;
+  font-size: 14px;
 }
 
 .dropdown-item:focus, .dropdown-item:hover {
@@ -120,26 +132,7 @@ a{
   font-weight: 600;
 }
 
-/* For mobile devices (less than 768px wide, adjust as needed) */
-@media (max-width: 767px) {
-  .top-navbar{
-    background-color: #000;
-  }
-  .navbar-light .navbar-nav .nav-link {
-    color: #fff !important;
-}
-.navbar-light .navbar-toggler-icon {
-  background-image: url("./assests/images/menu.png") !important;
-}
-.navbar-nav {
-  margin-left: 0 !important;
-}
-.dropdown-menu.show {
-  display: block;
-  width: 400px !important;
-  background:#5C5D5D;
-}
-}
+
 
 
 /* Banner part */
@@ -222,6 +215,15 @@ a{
   height: auto;
 }
 
+/* .overlay-two {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 125%;
+  background-color: rgba(0, 0, 0, 0.8); 
+  opacity: 0.5;
+} */
 .overlay {
   position: absolute;
   top: 0;
@@ -245,97 +247,8 @@ a{
   text-align: justify;
   letter-spacing: 1px;
 }
-.service-bottom-info .button-container-1 {
-  position: relative;
-  height: 50px;
-  overflow: hidden;
-  border: 1px solid;
-  font-weight: 300;
-  font-size: 14px;
-  transition: 0.5s;
-  letter-spacing: 1px;
-  border-radius: 14px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
-}
-.button-container-1 button {
-  width: 101%;
-  height: 100%;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  background: #000;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  -webkit-mask-size: 2300% 100%;
-  mask-size: 2300% 100%;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(22) forwards;
-  animation: ani2 0.7s steps(22) forwards;
-}
-.button-container-1 button:hover {
-  -webkit-animation: ani 0.7s steps(22) forwards;
-  animation: ani 0.7s steps(22) forwards;
-}
-.mas {
-  position: absolute;
-  color: #000;
-  text-align: center;
-  width: 101%;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  position: absolute;
-  font-size: 11px;
-  margin-top: 17px;
-  overflow: hidden;
-  font-weight: bold;
-}
 
-@-webkit-keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-@keyframes ani {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
-@-webkit-keyframes ani2 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-@keyframes ani2 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
-
-.service-bottom-info a {
+.service-bottom-info .knowmore {
   background-image: linear-gradient(
     to right,
     #0a0a0a,
@@ -354,7 +267,7 @@ a{
   font-size: 13px;
 }
 
-.service-bottom-info a:before{
+.service-bottom-info .knowmore:before{
   content: '';
   background: #000;
   display: block;
@@ -366,14 +279,40 @@ a{
   transition: all 0.3s ease-in-out;
 }
 
-.service-bottom-info a:hover {
+.service-bottom-info .knowmore:hover {
  background-position: 0;
 }
 
-.service-bottom-info a:hover::before{
+.service-bottom-info .knowmore:hover::before{
   width: 100%;
 }
+.service-bottom-info .button-container-app{
+  position: relative;
+  width: 250px;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8vh;
+  overflow: hidden;
+  border: 1px solid #fff;
+  font-weight: 300;
+  transition: 0.5s;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
+}
 
+.service-bottom-info .button-container-app button {
+  width: 101%;
+  height: 100%;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  border: none;
+  color: #000;
+  cursor: pointer;
+}
 
 .more .button-container {
   position: relative;
@@ -385,7 +324,6 @@ a{
   margin-bottom: 8vh;
   overflow: hidden;
   border: 1px solid #000;
-  font-family: "Lato", sans-serif;
   font-weight: 300;
   transition: 0.5s;
   letter-spacing: 1px;
@@ -444,7 +382,7 @@ a{
 
 .choose-container .faq-contant{
   background: #F1F1F1;
-  height: 70vh;
+  height: 83vh;
   box-shadow: 0 -20px 10px -20px rgba(0,0,0,0.45) inset, -20px 0 10px -20px rgba(0,0,0,0.45) inset;
 }
 
@@ -577,8 +515,10 @@ a{
   height: 40vh;
 }
 .media-logo ul{
-  margin-left: 100px;
   margin-top: 10px;
+}
+.footer .foot-logo img{
+  margin-left: -80px;
 }
 
 .media-logo ul li{
@@ -622,13 +562,14 @@ a{
 /* About-part */
 
 .about-banner{
-  background-image: url('./assests/images/front-end-area.jpg');
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/front-area.png');
   background-size: cover;
-  height: 80vh;
+  height: 100vh;
   background-repeat: no-repeat;
 }
 
-.about-banner .section-heading .ed-heading {
+.section-heading .ed-heading {
   font-size: 42px;
   letter-spacing: .20px;
   line-height: 42px;
@@ -639,9 +580,10 @@ a{
   text-align: center;
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: 30% !important;
   text-align: start;
-  color: #fff;
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 .para-one {
   font-weight: bolder !important;
@@ -700,15 +642,11 @@ a{
   letter-spacing: 1px;
   font-weight: bold;
   background: #fff;
-  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-  -webkit-mask-size: 7100% 100%;
-  mask-size: 7100% 100%;
   border: none;
   color: #000;
   cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(70) forwards;
-  animation: ani2 0.7s steps(70) forwards;
+  /* -webkit-animation: ani2 0.7s steps(70) forwards;
+  animation: ani2 0.7s steps(70) forwards; */
 }
 /* Service */
 
@@ -851,5 +789,1981 @@ Generic layout (demo looks)
   width: 1px;
 }
 
+/* Acne */
 
+.acne-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Acne-2.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* acnescer-banner */
+
+.acnescer-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Acne Scars.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* alopecia-banner */
+
+
+.alopecia-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Alopecia.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* brow-cheek-banner */
+
+.brow-cheek-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Cheeks\ &\ Chin.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* CelluliteLooseSkinBanner */
+
+.CelluliteLooseSkinBanner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/cellulite-loose-skin.jpeg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* dark-circles-banner */
+
+
+.dark-circles-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Dark Circles.jpeg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* dilate-pores-banner */
+
+.dilate-pores-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Open-Pores.jpeg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+
+/* double-chin-banner */
+
+.double-chin-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/doublechin.jpeg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* excess-body-banner */
+
+.excess-body-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Excess\ Body\ &\ Facial\ Hair.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* dull-skin-banner */
+
+.dull-skin-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/DULL SKIN.jpeg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* facial-hair-banner */
+
+
+.facial-hair-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Facial hair.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* warts-skin-tags-banner */
+.warts-skin-tags-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/skintag.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* dark-thin-lip-banner */
+.dark-thin-lip-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/dark and thinlip.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* tattoo-removal-banner */
+
+.tattoo-removal-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/tatoo.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* tanning-uneven-skin-banner */
+
+.tanning-uneven-skin-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assests/images/TAN LINE ENVY.jpeg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* sweat-control-banner */
+.sweat-control-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/sweat.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* sunken-eyes-banner */
+.sunken-eyes-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assests/images/Sunken eyes.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* stretch-marks-banner */
+
+.stretch-marks-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Stretch marks.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* saggy-puffy-eye-banner */
+
+.saggy-puffy-eye-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/SAGGY\ PUFFY\ EYE.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* sagging-ageing-banner */
+
+.sagging-ageing-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/sagging-ageing.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* rosacea-banner */
+
+.rosacea-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Rosacea.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* pigmentation-banner */
+
+.pigmentation-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/skin-pigmentation.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* melasma-banner */
+.melasma-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/melasma.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* marks-spots-banner */
+
+.marks-spots-banner{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assests/images/face age spots.jpeg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+
+}
+
+/* lip-augmuntation-banner */
+.lip-augmuntation-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./assests/images/lip-augmuntation.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* hair-loss-banner */
+
+.hair-loss-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/HAIR LOSS.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* glow-maintenance-banner */
+
+.glow-maintenance-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/glow&maintenance.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* freckles-banner */
+
+.freckles-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/freckles.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* fine-lines-wrinkles-banne */
+.fine-lines-wrinkles-banner{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/wrinkles.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* facial-remodelling-banner */
+.facial-remodelling-banner {
+  /* Your existing styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Facial-remodelling.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/*  botox-banner*/
+.botox-banner{
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/bptox.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* chemical-peeling-banner */
+.chemical-peeling-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Chemical peeling.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+
+/* dermal-fillers-banner */
+
+.dermal-fillers-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Dermal Filler.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* derma-roller-banner */
+
+.derma-roller-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/roller.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* diamond-banner */
+
+.diamond-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Microdermabrasion.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+
+/* face-mesotherapy-banner */
+
+.face-mesotherapy-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests//images/faceMesotherapy.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* HIFU-banner */
+
+.HIFU-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/hifu-header.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* HIFU-banner */
+
+.laser-hair-reduction-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/laser-epilation-hair-removal-therapy\ \(2\).jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* mesotherapy-banner */
+
+.mesotherapy-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Mesotherapy.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* platelet-rich-plasma-banner */
+
+.platelet-rich-plasma-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Platelet.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* PRP-banner */
+
+.PRP-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/prp.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* QSwitch-banner */
+
+.QSwitch-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Q-Switched-Nd-3.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* skin-maintenance-banner */
+
+.skin-maintenance-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/skin.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* skin-rejuvenation-banner */
+
+.skin-rejuvenation-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/SkinRejuvenation.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* synergy-plus-banner */
+
+.synergy-plus-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/synergyplus.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+
+/* holistic-banner */
+
+.holistic-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/holistic-health.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* Holistic */
+.holistic-service, .book-app{
+  background-color: #F1F1F1;
+}
+
+.holistic-service .secttion-heading{
+  text-align: center;
+  padding: 40px;
+}
+.holistic-faq-service{
+  padding: 40px;
+}
+.holistic-service .secttion-heading .ed-heading{
+  font-size: 42px;
+  letter-spacing: .20px;
+  line-height: 42px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.book-app .banner-title{
+  text-align: center;
+}
+
+/* Psychological-banner */
+
+.Psychological-banner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Psychological Counselling.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* meditationbanner */
+
+.meditationbanner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/Meditation.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+/* YogaBanner */
+.YogaBanner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/yoga.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+/* BodyMesotherapyBanner */
+.BodyMesotherapyBanner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/high-angle-healthcare-professional-injecting-belly.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.HIFUBodybanner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/The Body Lab.jpeg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.FIRDetoxBanner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/young-woman-with-beautiful-body-measure-tape.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+.FatXbanner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/woman-body-fat-belly-obese-woman-hands-holding-excessive-tummy-fat-change-diet-lifestyle-concept-shape-up-healthy-stomach-muscle-studio-anonymous-shot-photo-body-parts.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.AntiObesityPlatformbanner{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/cheerful-girl-lost-weight-rejoicing-diet-worked.jpg');
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+
+
+@media (max-width: 320px) {
+  .footer{
+    background: #000;
+  padding: 50px;
+  height: auto;
+  }
+  .footer .foot-logo img {
+    width: 350px !important;
+    margin-left: -86px;
+}
+.media-logo ul {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-left: -77px;
+}
+.foot-manu-one {
+  border-right: none;
+  margin-right: 0;
+  margin-left: -30px;
+}
+.copyright {
+  height: 84px !important;
+  margin-top: 50px;
+}
+.from-area {
+  width: 20rem !important;
+}
+.about-banner {
+  background-size: contain;
+  height: 25vh;
+  background-repeat: no-repeat;
+}
+.fixed.p-2.rounded-lg.bg-pink-900.bottom-3.right-3.lg\:bottom-5.lg\:right-5.cursor-pointer {
+  position: absolute;
+  margin-top: -77px;
+  margin-left: 88px;
+  cursor: pointer;
+}
+.dropdown-menu.show {
+  display: block;
+  width: 280px !important;
+  background:#5C5D5D;
+}
+.dropdown-container{
+  height: 50vh; 
+  overflow-y: auto;
+}
+.Psychological-banner {
+  background-size: contain;
+  height: 27vh;
+}
+.meditationbanner {
+  background-size: cover;
+  height: 27vh;
+  background-repeat: no-repeat;
+}
+.YogaBanner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/yoga-mobile.jpg');
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.holistic-banner {
+  background-size: cover;
+  height: 30vh;
+}
+.service-info-img .img-box {
+  position: relative;
+  width: 280px;
+  margin-left: -17px;
+}
+.holistic-service .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.service-info .desc {
+  font-size: 16px;
+}
+.service-bottom-info a {
+  display: none;
+}
+.service-info .sub-heading {
+  font-size: 22px;
+}
+.service-info.anti-area {
+  margin-top: 180px;
+}
+img.antiimg {
+  position: absolute;
+  margin-top: -43rem;
+}
+img.hifuimg {
+  margin-top: -105px;
+}
+.experts-area .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.section-heading .ed-heading {
+  font-size: 32px;
+}
+.FIRDetoxBanner {
+  background-size: cover;
+  height: 30vh;
+}
+.FatXbanner {
+  background-size: cover;
+  height: 14vh;
+}
+.BodyMesotherapyBanner {
+  background-size: contain;
+  height: 14vh;
+}
+.HIFUBodybanner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.AntiObesityPlatformbanner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.skin-maintenance-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.mesotherapy-banner {
+  background-size: cover;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.platelet-rich-plasma-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.laser-hair-reduction-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.derma-roller-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.synergy-plus-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.diamond-banner {
+  background-size: contain;
+  height: 34vh;
+  background-repeat: no-repeat;
+}
+.face-mesotherapy-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.chemical-peeling-banner {
+  background-size: contain;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.PRP-banner {
+  background-size: cover;
+  height: 22vh;
+  background-repeat: no-repeat;
+}
+.QSwitch-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.skin-rejuvenation-banner {
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.dermal-fillers-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.HIFU-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.botox-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.banner {
+  background-image: none;
+}
+.banner .section-heading .ed-heading {
+  font-size: 32px;
+  letter-spacing: 10.2px;
+  margin-top: 57px !important;
+}
+.banner .sgl-cont .subline {
+  margin-top: 15px !important;
+  width: 73% !important;
+  margin-left: 12% !important;
+  letter-spacing: 0 !important;
+  line-height: 25px;
+}
+.home-services .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+section.home-services.g-sec-pad {
+  margin-top: -160px;
+}
+.choose-container .video-contant {
+  display: none;
+}
+.choose-container .vedio-contamt-bottom-part {
+  display: none;
+}
+.choose-container .faq-contant {
+  height: auto;
+}
+.faq-contant ul li{
+  margin-left: -32px;
+}
+.dr-title a {
+  font-size: 15px;
+  margin-left: 0;
+}
+.carousel-item {
+  width: 64rem !important;
+  margin-right: -100%;
+}
+.client-area .secttion-heading .ed-heading {
+  font-size: 25px;
+}
+.acne-banner {
+  background-size: cover;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.acnescer-banner, .saggy-puffy-eye-banner, .hair-loss-banner, .dark-circles-banner, .brow-cheek-banner, .dilate-pores-banner, .stretch-marks-banner, .CelluliteLooseSkinBanner, .glow-maintenance-banner, .dark-thin-lip-banner, .sweat-control-banner, .lip-augmuntation-banner, .double-chin-banner, .sagging-ageing-banner, .fine-lines-wrinkles-banner, .pigmentation-banner, .rosacea-banner, .dull-skin-banner, .tanning-uneven-skin-banner, .melasma-banner, .alopecia-banner, .marks-spots-banner, .excess-body-banner, .facial-remodelling-banner, .facial-hair-banner  {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.sunken-eyes-banner, .tattoo-removal-banner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.freckles-banner {
+  background-size: contain;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.warts-skin-tags-banner {
+  height: 20vh;
+  background-repeat: no-repeat;
+}
+
+}
+@media (max-width: 360px) {
+  img.navbarlogo {
+    width: 230px !important;
+}
+.navbar-nav .nav-link {
+  font-size: 18px;
+}
+
+  .footer{
+    background: #000;
+  padding: 50px;
+  height: auto;
+  }
+  .footer .foot-logo img {
+    width: 350px !important;
+    margin-left: -86px;
+}
+.media-logo ul {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-left: -77px;
+}
+.foot-manu-one {
+  border-right: none;
+  margin-right: 0;
+  margin-left: -30px;
+}
+.copyright {
+  height: 84px !important;
+  margin-top: 50px;
+}
+.from-area {
+  width: 20rem !important;
+}
+.about-banner {
+  background-size: contain;
+  height: 25vh;
+  background-repeat: no-repeat;
+}
+.fixed.p-2.rounded-lg.bg-pink-900.bottom-3.right-3.lg\:bottom-5.lg\:right-5.cursor-pointer {
+  position: absolute;
+  margin-top: -77px;
+  margin-left: 88px;
+  cursor: pointer;
+}
+.dropdown-menu.show {
+  display: block;
+  width: 280px !important;
+  background:#5C5D5D;
+}
+.dropdown-container{
+  height: 50vh; 
+  overflow-y: auto;
+}
+.Psychological-banner {
+  background-size: contain;
+  height: 27vh;
+}
+.meditationbanner {
+  background-size: cover;
+  height: 27vh;
+  background-repeat: no-repeat;
+}
+.YogaBanner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/yoga-mobile.jpg');
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.holistic-banner {
+  background-size: cover;
+  height: 30vh;
+}
+.service-info-img .img-box {
+  position: relative;
+  width: 280px;
+  margin-left: -17px;
+}
+.holistic-service .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.service-info .desc {
+  font-size: 16px;
+}
+.service-bottom-info a {
+  display: none;
+}
+.service-info .sub-heading {
+  font-size: 22px;
+}
+.service-info.anti-area {
+  margin-top: 180px;
+}
+img.antiimg {
+  position: absolute;
+  margin-top: -43rem;
+}
+img.hifuimg {
+  margin-top: -105px;
+}
+.experts-area .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.section-heading .ed-heading {
+  font-size: 32px;
+}
+.FIRDetoxBanner {
+  background-size: cover;
+  height: 30vh;
+}
+.FatXbanner {
+  background-size: cover;
+  height: 14vh;
+}
+.BodyMesotherapyBanner {
+  background-size: contain;
+  height: 14vh;
+}
+.HIFUBodybanner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.AntiObesityPlatformbanner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.skin-maintenance-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.mesotherapy-banner {
+  background-size: cover;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.platelet-rich-plasma-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.laser-hair-reduction-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.derma-roller-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.synergy-plus-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.diamond-banner {
+  background-size: contain;
+  height: 34vh;
+  background-repeat: no-repeat;
+}
+.face-mesotherapy-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.chemical-peeling-banner {
+  background-size: contain;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.PRP-banner {
+  background-size: cover;
+  height: 22vh;
+  background-repeat: no-repeat;
+}
+.QSwitch-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.skin-rejuvenation-banner {
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.dermal-fillers-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.HIFU-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.botox-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.banner {
+  background-image: none;
+}
+.banner .section-heading .ed-heading {
+  font-size: 32px;
+  letter-spacing: 10.2px;
+  margin-top: 57px !important;
+}
+.banner .sgl-cont .subline {
+  margin-top: 15px !important;
+  width: 73% !important;
+  margin-left: 12% !important;
+  letter-spacing: 0 !important;
+  line-height: 25px;
+}
+.home-services .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+section.home-services.g-sec-pad {
+  margin-top: -160px;
+}
+.choose-container .video-contant {
+  display: none;
+}
+.choose-container .vedio-contamt-bottom-part {
+  display: none;
+}
+.choose-container .faq-contant {
+  height: auto;
+}
+.faq-contant ul li{
+  margin-left: -32px;
+}
+.dr-title a {
+  font-size: 15px;
+  margin-left: 0;
+}
+.carousel-item {
+  width: 64rem !important;
+  margin-right: -100%;
+}
+.client-area .secttion-heading .ed-heading {
+  font-size: 25px;
+}
+.acne-banner {
+  background-size: cover;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.acnescer-banner, .saggy-puffy-eye-banner, .hair-loss-banner, .dark-circles-banner, .brow-cheek-banner, .dilate-pores-banner, .stretch-marks-banner, .CelluliteLooseSkinBanner, .glow-maintenance-banner, .dark-thin-lip-banner, .sweat-control-banner, .lip-augmuntation-banner, .double-chin-banner, .sagging-ageing-banner, .fine-lines-wrinkles-banner, .pigmentation-banner, .rosacea-banner, .dull-skin-banner, .tanning-uneven-skin-banner, .melasma-banner, .alopecia-banner, .marks-spots-banner, .excess-body-banner, .facial-remodelling-banner, .facial-hair-banner  {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.sunken-eyes-banner, .tattoo-removal-banner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.freckles-banner {
+  background-size: contain;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.warts-skin-tags-banner {
+  height: 20vh;
+  background-repeat: no-repeat;
+}
+
+}
+
+@media (max-width: 395px) {
+  img.navbarlogo {
+    width: 230px !important;
+}
+.navbar-nav .nav-link {
+  font-size: 18px !important;
+}
+  .footer{
+  background: #000;
+  padding: 50px;
+  height: auto;
+  }
+  .footer .foot-logo img {
+    width: 350px !important;
+    margin-left: -86px;
+}
+.media-logo ul {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-left: -77px;
+}
+.foot-manu-one {
+  border-right: none;
+  margin-right: 0;
+  margin-left: -30px;
+}
+.copyright {
+  height: 84px !important;
+  margin-top: 50px;
+}
+.from-area {
+  width: 20rem !important;
+}
+.about-banner {
+  background-size: cover;
+  height: 25vh;
+  background-repeat: no-repeat;
+}
+.fixed.p-2.rounded-lg.bg-pink-900.bottom-3.right-3.lg\:bottom-5.lg\:right-5.cursor-pointer {
+  position: absolute;
+  margin-top: -77px;
+  margin-left: 88px;
+  cursor: pointer;
+}
+.dropdown-menu.show {
+  display: block;
+  width: 280px !important;
+  background:#5C5D5D;
+}
+.dropdown-container{
+  height: 50vh; 
+  overflow-y: auto;
+}
+.Psychological-banner {
+  background-size: cover;
+  height: 27vh;
+}
+.meditationbanner {
+  background-size: cover;
+  height: 27vh;
+  background-repeat: no-repeat;
+}
+.YogaBanner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/yoga-mobile.jpg');
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.holistic-banner {
+  background-size: cover;
+  height: 30vh;
+}
+.service-info-img .img-box {
+  position: relative;
+  width: 280px;
+  margin-left: -17px;
+}
+.holistic-service .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.service-info .desc {
+  font-size: 16px;
+}
+.service-bottom-info a {
+  display: none;
+}
+.service-info .sub-heading {
+  font-size: 22px;
+}
+.service-info.anti-area {
+  margin-top: 180px;
+}
+img.antiimg {
+  position: absolute;
+  margin-top: -39rem;
+  margin-left: 26px;
+}
+img.hifuimg {
+  margin-top: -105px;
+}
+.experts-area .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.section-heading .ed-heading {
+  font-size: 32px;
+}
+.FIRDetoxBanner {
+  background-size: cover;
+  height: 30vh;
+}
+.FatXbanner {
+  background-size: cover;
+  height: 14vh;
+}
+.BodyMesotherapyBanner {
+  background-size: contain;
+  height: 14vh;
+}
+.HIFUBodybanner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.AntiObesityPlatformbanner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.skin-maintenance-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.mesotherapy-banner {
+  background-size: cover;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.platelet-rich-plasma-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.laser-hair-reduction-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.derma-roller-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.synergy-plus-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.diamond-banner {
+  background-size: contain;
+  height: 34vh;
+  background-repeat: no-repeat;
+}
+.face-mesotherapy-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.chemical-peeling-banner {
+  background-size: contain;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.PRP-banner {
+  background-size: cover;
+  height: 22vh;
+  background-repeat: no-repeat;
+}
+.QSwitch-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.skin-rejuvenation-banner {
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.dermal-fillers-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.HIFU-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.botox-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.banner {
+  background-image: none;
+}
+.banner .section-heading .ed-heading {
+  font-size: 32px;
+  letter-spacing: 10.2px;
+  margin-top: 57px !important;
+}
+.banner .sgl-cont .subline {
+  margin-top: 15px !important;
+  width: 73% !important;
+  margin-left: 12% !important;
+  letter-spacing: 0 !important;
+  line-height: 25px;
+}
+.home-services .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+section.home-services.g-sec-pad {
+  margin-top: -160px;
+}
+.choose-container .video-contant {
+  display: none;
+}
+.choose-container .vedio-contamt-bottom-part {
+  display: none;
+}
+.choose-container .faq-contant {
+  height: auto;
+}
+.faq-contant ul li{
+  margin-left: -32px;
+}
+.dr-title a {
+  font-size: 15px;
+  margin-left: 0;
+}
+.carousel-item {
+  width: 64rem !important;
+  margin-right: -100%;
+}
+.client-area .secttion-heading .ed-heading {
+  font-size: 25px;
+}
+.acne-banner {
+  background-size: cover;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.acnescer-banner, .saggy-puffy-eye-banner, .hair-loss-banner, .dark-circles-banner, .brow-cheek-banner, .dilate-pores-banner, .stretch-marks-banner, .CelluliteLooseSkinBanner, .glow-maintenance-banner, .dark-thin-lip-banner, .sweat-control-banner, .lip-augmuntation-banner, .double-chin-banner, .sagging-ageing-banner, .fine-lines-wrinkles-banner, .pigmentation-banner, .rosacea-banner, .dull-skin-banner, .tanning-uneven-skin-banner, .melasma-banner, .alopecia-banner, .marks-spots-banner, .excess-body-banner, .facial-remodelling-banner, .facial-hair-banner  {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.sunken-eyes-banner, .tattoo-removal-banner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.freckles-banner {
+  background-size: contain;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.warts-skin-tags-banner {
+  height: 20vh;
+  background-repeat: no-repeat;
+}
+
+}
+
+@media (max-width: 420px) {
+  img.navbarlogo {
+    width: 230px !important;
+}
+.navbar-nav .nav-link {
+  font-size: 18px !important;
+}
+  .footer{
+    background: #000;
+  padding: 50px;
+  height: auto;
+  }
+  .footer .foot-logo img {
+    width: 350px !important;
+    margin-left: -86px;
+}
+.media-logo ul {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-left: -77px;
+}
+.foot-manu-one {
+  border-right: none;
+  margin-right: 0;
+  margin-left: -30px;
+}
+.copyright {
+  height: 84px !important;
+  margin-top: 50px;
+}
+.from-area {
+  width: 20rem !important;
+}
+.about-banner {
+  background-size: cover;
+  height: 25vh;
+  background-repeat: no-repeat;
+}
+.fixed.p-2.rounded-lg.bg-pink-900.bottom-3.right-3.lg\:bottom-5.lg\:right-5.cursor-pointer {
+  position: absolute;
+  margin-top: -77px;
+  margin-left: 88px;
+  cursor: pointer;
+}
+.dropdown-menu.show {
+  display: block;
+  width: 280px !important;
+  background:#5C5D5D;
+}
+.dropdown-container{
+  height: 50vh; 
+  overflow-y: auto;
+}
+.Psychological-banner {
+  background-size: cover;
+  height: 27vh;
+}
+.meditationbanner {
+  background-size: cover;
+  height: 27vh;
+  background-repeat: no-repeat;
+}
+.YogaBanner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/yoga-mobile.jpg');
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.holistic-banner {
+  background-size: cover;
+  height: 30vh;
+}
+.service-info-img .img-box {
+  position: relative;
+  width: 280px;
+  margin-left: -17px;
+}
+.holistic-service .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.service-info .desc {
+  font-size: 16px;
+}
+.service-bottom-info a {
+  display: none;
+}
+.service-info .sub-heading {
+  font-size: 22px;
+}
+.service-info.anti-area {
+  margin-top: 180px;
+}
+img.antiimg {
+  position: absolute;
+  margin-top: -39rem;
+  margin-left: 26px;
+}
+img.hifuimg {
+  margin-top: -105px;
+}
+.experts-area .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.section-heading .ed-heading {
+  font-size: 32px;
+}
+.FIRDetoxBanner {
+  background-size: cover;
+  height: 30vh;
+}
+.FatXbanner {
+  background-size: cover;
+  height: 14vh;
+}
+.BodyMesotherapyBanner {
+  background-size: contain;
+  height: 14vh;
+}
+.HIFUBodybanner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.AntiObesityPlatformbanner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.skin-maintenance-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.mesotherapy-banner {
+  background-size: cover;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.platelet-rich-plasma-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.laser-hair-reduction-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.derma-roller-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.synergy-plus-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.diamond-banner {
+  background-size: contain;
+  height: 34vh;
+  background-repeat: no-repeat;
+}
+.face-mesotherapy-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.chemical-peeling-banner {
+  background-size: contain;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.PRP-banner {
+  background-size: cover;
+  height: 22vh;
+  background-repeat: no-repeat;
+}
+.QSwitch-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.skin-rejuvenation-banner {
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.dermal-fillers-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.HIFU-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.botox-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.banner {
+  background-image: none;
+}
+.banner .section-heading .ed-heading {
+  font-size: 32px;
+  letter-spacing: 10.2px;
+  margin-top: 57px !important;
+}
+.banner .sgl-cont .subline {
+  margin-top: 15px !important;
+  width: 73% !important;
+  margin-left: 12% !important;
+  letter-spacing: 0 !important;
+  line-height: 25px;
+}
+.home-services .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+section.home-services.g-sec-pad {
+  margin-top: -160px;
+}
+.choose-container .video-contant {
+  display: none;
+}
+.choose-container .vedio-contamt-bottom-part {
+  display: none;
+}
+.choose-container .faq-contant {
+  height: auto;
+}
+.faq-contant ul li{
+  margin-left: -32px;
+}
+.dr-title a {
+  font-size: 15px;
+  margin-left: 0;
+}
+.carousel-item {
+  width: 64rem !important;
+  margin-right: -100%;
+}
+.client-area .secttion-heading .ed-heading {
+  font-size: 25px;
+}
+.acne-banner {
+  background-size: cover;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.acnescer-banner, .saggy-puffy-eye-banner, .hair-loss-banner, .dark-circles-banner, .brow-cheek-banner, .dilate-pores-banner, .stretch-marks-banner, .CelluliteLooseSkinBanner, .glow-maintenance-banner, .dark-thin-lip-banner, .sweat-control-banner, .lip-augmuntation-banner, .double-chin-banner, .sagging-ageing-banner, .fine-lines-wrinkles-banner, .pigmentation-banner, .rosacea-banner, .dull-skin-banner, .tanning-uneven-skin-banner, .melasma-banner, .alopecia-banner, .marks-spots-banner, .excess-body-banner, .facial-remodelling-banner, .facial-hair-banner  {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.sunken-eyes-banner, .tattoo-removal-banner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.freckles-banner {
+  background-size: contain;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.warts-skin-tags-banner {
+  height: 20vh;
+  background-repeat: no-repeat;
+}
+
+}
+
+@media (max-width: 435px) {
+  img.navbarlogo {
+    width: 230px !important;
+}
+  .navbar-nav .nav-link {
+    font-size: 18px !important;
+  }
+  .footer{
+    background: #000;
+  padding: 50px;
+  height: auto;
+  }
+  .footer .foot-logo img {
+    width: 350px !important;
+    margin-left: -86px;
+}
+.media-logo ul {
+  margin-left: 0px;
+  margin-top: 10px;
+  margin-left: -77px;
+}
+.foot-manu-one {
+  border-right: none;
+  margin-right: 0;
+  margin-left: -30px;
+}
+.copyright {
+  height: 84px !important;
+  margin-top: 50px;
+}
+.from-area {
+  width: 20rem !important;
+}
+.about-banner {
+  background-size: cover;
+  height: 25vh;
+  background-repeat: no-repeat;
+}
+.fixed.p-2.rounded-lg.bg-pink-900.bottom-3.right-3.lg\:bottom-5.lg\:right-5.cursor-pointer {
+  position: absolute;
+  margin-top: -77px;
+  margin-left: 88px;
+  cursor: pointer;
+}
+.dropdown-menu.show {
+  display: block;
+  width: 280px !important;
+  background:#5C5D5D;
+}
+.dropdown-container{
+  height: 50vh; 
+  overflow-y: auto;
+}
+.Psychological-banner {
+  background-size: cover;
+  height: 27vh;
+}
+.meditationbanner {
+  background-size: cover;
+  height: 27vh;
+  background-repeat: no-repeat;
+}
+.YogaBanner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assests/images/yoga-mobile.jpg');
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.holistic-banner {
+  background-size: cover;
+  height: 30vh;
+}
+.service-info-img .img-box {
+  position: relative;
+  width: 280px;
+  margin-left: -17px;
+}
+.holistic-service .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.service-info .desc {
+  font-size: 16px;
+}
+.service-bottom-info a {
+  display: none;
+}
+.service-info .sub-heading {
+  font-size: 22px;
+}
+.service-info.anti-area {
+  margin-top: 180px;
+}
+img.antiimg {
+  position: absolute;
+  margin-top: -39rem;
+  margin-left: 26px;
+}
+img.hifuimg {
+  margin-top: -105px;
+}
+.experts-area .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+.section-heading .ed-heading {
+  font-size: 32px;
+}
+.FIRDetoxBanner {
+  background-size: cover;
+  height: 30vh;
+}
+.FatXbanner {
+  background-size: cover;
+  height: 14vh;
+}
+.BodyMesotherapyBanner {
+  background-size: contain;
+  height: 14vh;
+}
+.HIFUBodybanner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.AntiObesityPlatformbanner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.skin-maintenance-banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30vh;
+}
+.mesotherapy-banner {
+  background-size: cover;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.platelet-rich-plasma-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.laser-hair-reduction-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.derma-roller-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.synergy-plus-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.diamond-banner {
+  background-size: contain;
+  height: 34vh;
+  background-repeat: no-repeat;
+}
+.face-mesotherapy-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.chemical-peeling-banner {
+  background-size: contain;
+  height: 19vh;
+  background-repeat: no-repeat;
+}
+.PRP-banner {
+  background-size: cover;
+  height: 22vh;
+  background-repeat: no-repeat;
+}
+.QSwitch-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.skin-rejuvenation-banner {
+  background-size: cover;
+  height: 35vh;
+  background-repeat: no-repeat;
+}
+.dermal-fillers-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.HIFU-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.botox-banner {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.banner {
+  background-image: none;
+}
+.banner .section-heading .ed-heading {
+  font-size: 32px;
+  letter-spacing: 10.2px;
+  margin-top: 57px !important;
+}
+.banner .sgl-cont .subline {
+  margin-top: 15px !important;
+  width: 73% !important;
+  margin-left: 12% !important;
+  letter-spacing: 0 !important;
+  line-height: 25px;
+}
+.home-services .secttion-heading .ed-heading {
+  font-size: 32px;
+}
+section.home-services.g-sec-pad {
+  margin-top: -160px;
+}
+.choose-container .video-contant {
+  display: none;
+}
+.choose-container .vedio-contamt-bottom-part {
+  display: none;
+}
+.choose-container .faq-contant {
+  height: auto;
+}
+.faq-contant ul li{
+  margin-left: -32px;
+}
+.dr-title a {
+  font-size: 15px;
+  margin-left: 0;
+}
+.carousel-item {
+  width: 64rem !important;
+  margin-right: -100%;
+}
+.client-area .secttion-heading .ed-heading {
+  font-size: 25px;
+}
+.acne-banner {
+  background-size: cover;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.acnescer-banner, .saggy-puffy-eye-banner, .hair-loss-banner, .dark-circles-banner, .brow-cheek-banner, .dilate-pores-banner, .stretch-marks-banner, .CelluliteLooseSkinBanner, .glow-maintenance-banner, .dark-thin-lip-banner, .sweat-control-banner, .lip-augmuntation-banner, .double-chin-banner, .sagging-ageing-banner, .fine-lines-wrinkles-banner, .pigmentation-banner, .rosacea-banner, .dull-skin-banner, .tanning-uneven-skin-banner, .melasma-banner, .alopecia-banner, .marks-spots-banner, .excess-body-banner, .facial-remodelling-banner, .facial-hair-banner  {
+  background-size: cover;
+  height: 30vh;
+  background-repeat: no-repeat;
+}
+.sunken-eyes-banner, .tattoo-removal-banner {
+  background-size: contain;
+  height: 14vh;
+  background-repeat: no-repeat;
+}
+.freckles-banner {
+  background-size: contain;
+  height: 23vh;
+  background-repeat: no-repeat;
+}
+.warts-skin-tags-banner {
+  height: 20vh;
+  background-repeat: no-repeat;
+}
+
+
+}
+
+
+
+/* For mobile devices (less than 768px wide, adjust as needed)
+@media (max-width: 770px) {
+  
+} */
+
+@media screen  and (max-width: 770px) {
+  img.navbarlogo {
+    width: 450px;
+}
+.top-header {
+  display: none;
+}
+.top-navbar{
+  background-color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.navbar-light .navbar-toggler-icon {
+background-image: url("./assests/images/menu.png") !important;
+}
+.navbar-nav {
+margin-left: 0 !important;
+}
+.navbar-nav .nav-link {
+  font-size: 22px;
+}
+.dropdown-item {
+  font-size: 17px !important;
+}
+
+.about-banner {
+  height: 50vh;
+}
+.from-area {
+  padding: 0;
+  /* width: 2500px !important; */
+}
+.fixed.p-2.rounded-lg.bg-pink-900.bottom-3.right-3.lg\:bottom-5.lg\:right-5.cursor-pointer {
+  margin-left: 88px;
+  margin-top: -71px;
+}
+.footer {
+ height: auto;
+}
+}
+
+
+
+
+@media screen  and (max-width: 840px) {
+  img.navbarlogo {
+    width: 450px;
+}
+.top-header {
+  display: none;
+}
+.top-navbar{
+  background-color: #000;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.navbar-light .navbar-toggler-icon {
+background-image: url("./assests/images/menu.png") !important;
+}
+.navbar-nav {
+margin-left: 0 !important;
+}
+.navbar-nav .nav-link {
+  font-size: 22px;
+}
+.dropdown-item {
+  font-size: 17px !important;
+}
+.dropdown-container{
+  height: 50vh; 
+  overflow-y: auto;
+}
+
+.about-banner {
+  height: 50vh;
+}
+.from-area {
+  padding: 0;
+}
+.footer .foot-logo img {
+  width: 280px !important;
+  margin-left: -92px;
+  margin-top: 72px;
+}
+.media-logo ul {
+  margin-left: -100px;
+}
+.fixed.p-2.rounded-lg.bg-pink-900.bottom-3.right-3.lg\:bottom-5.lg\:right-5.cursor-pointer {
+  margin-left: 88px;
+  margin-top: -71px;
+}
+.foot-manu-one {
+  border-right: none;
+  margin-right: -29px;
+}
+.Psychological-banner, .meditationbanner, .FIRDetoxBanner, .FatXbanner, .BodyMesotherapyBanner, .HIFUBodybanner, .chemical-peeling-banner, .PRP-banner, .dermal-fillers-banner, .HIFU-banner, .facial-hair-banner, .sweat-control-banner, .sweat-control-banner, .freckles-banner, .sunken-eyes-banner, .acnescer-banner, .acne-banner{
+  height: 30vh;
+}
+.YogaBanner, .holistic-banner, .derma-roller-banner, .synergy-plus-banner, .diamond-banner, .face-mesotherapy-banner, .skin-maintenance-banner, .platelet-rich-plasma-banner, .laser-hair-reduction-banner, .QSwitch-banner, .skin-rejuvenation-banner, .botox-banner, .facial-remodelling-banner, .excess-body-banner, .marks-spots-banner, .alopecia-banner, .melasma-banner, .tanning-uneven-skin-banner, .lip-augmuntation-banner, .dark-thin-lip-banner, .glow-maintenance-banner, .warts-skin-tags-banner, .CelluliteLooseSkinBanner, .stretch-marks-banner, .dilate-pores-banner, .dull-skin-banner, .rosacea-banner, .pigmentation-banner, .fine-lines-wrinkles-banner, .sagging-ageing-banner, .double-chin-banner, .brow-cheek-banner, .dark-circles-banner, .hair-loss-banner, .saggy-puffy-eye-banner{
+  height: 50vh;
+}
+.AntiObesityPlatformbanner, .mesotherapy-banner, .tattoo-removal-banner{
+  height: 20vh;
+}
+
+.anti-area {
+  margin-top: 350px;
+}
+.antiimg {
+  position: absolute;
+  margin-top: -44rem;
+}
+
+}
 

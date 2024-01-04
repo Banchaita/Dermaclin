@@ -28,6 +28,9 @@ const OurService = () => {
             <Header />
             <TopNav />
             <ServiceBanner />
+                <div className="section-heading">
+                    <h2 className="g-heading ed-heading client-exp banner-title mt-5">Our Service</h2>
+                </div>
             <section class="articles">
                 <article>
                     <div class="article-wrapper">

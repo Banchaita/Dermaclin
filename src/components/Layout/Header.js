@@ -56,12 +56,12 @@ function Header () {
                         <div className="contact-media">
                             <ul className="top-contact-media">
                                 <li className="top-g-li">
-                                    <a href="http://">
+                                    <a href="https://www.facebook.com/profile.php?id=61555295933020" target='blank'>
                                     <img src={facebook} alt="" class="phone"/>
                                     </a>
                                 </li>
                                 <li className="top-g-li">
-                                    <a href="http://">
+                                    <a href="https://www.instagram.com/dermaclin_skin_care/" target='blank'>
                                     <img src={instagram} alt=""class="phone"/>
                                     </a>
                                 </li>

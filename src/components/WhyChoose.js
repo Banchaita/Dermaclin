@@ -70,7 +70,7 @@ const WhyChoose = () => {
                   </Row>
                       <Col className='vedio-contamt-bottom-part'>
                       <div class="section-heading">
-                            <h2 class="ed-heading">WE ARE Dermaclin</h2>
+                            <h2 class="ed-heading text-white">WE ARE Dermaclin</h2>
                             <p class="desc">
                               Our core purpose is to help people live healthy, happy &amp; confident. The
                               objective is to set a benchmark by delivering a beautiful clinical experience

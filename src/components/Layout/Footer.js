@@ -18,7 +18,7 @@ const Footer = () => {
             <section className="footer">
                 <Container>
                     <Row>
-                        <Col className='logo-part'>
+                        <Col className='logo-part' md={2} sm={12} xs={12} lg={4}>
                             <div className="foot-logo">
                                 <img src={Logo} alt="" srcset="" width={500} />
                             </div>
@@ -54,36 +54,36 @@ const Footer = () => {
 
                             </div>
                         </Col>
-                        <Col>
+                        <Col md={2} sm={6} xs={6} lg={2}>
                             <div className="foot-manu-one">
                                 <ul>
-                                    <li><a href="/Dermaclin/concern/acne.html">Acne</a></li>
-                                    <li><a href="/Dermaclin/concern/acnescars.html">Acne scars</a></li>
-                                    <li><a href="/Dermaclin/concern/pigmentation.html">Pigmentation</a></li>
-                                    <li><a href="/Dermaclin/concern/fine lines & wrinkles.html"> Fine lines &
+                                    <li><a href="/Concern/acne">Acne</a></li>
+                                    <li><a href="/concern/acnescars">Acne scars</a></li>
+                                    <li><a href="/concern/pigmentation">Pigmentation</a></li>
+                                    <li><a href="/concern/finelineswrinkles"> Fine lines &
                                         wrinkles</a></li>
-                                    <li><a href="/Dermaclin/concern/sagging-ageing.html">Sagging & ageing</a>
+                                    <li><a href="/concern/saggingageing">Sagging & ageing</a>
                                     </li>
-                                    <li><a href="/Dermaclin/concern/FacialRemodelling.html">Facial
+                                    <li><a href="/concern/facialremodelling">Facial
                                         Remodelling</a></li>
-                                    <li><a href="/Dermaclin/concern/hair-loss.html">Hair loss</a></li>
+                                    <li><a href="/concern/Hairloss">Hair loss</a></li>
                                 </ul>
                             </div>
                         </Col>
-                        <Col>
+                        <Col md={2} sm={6} xs={6} lg={2}>
                             <div className="foot-manu-one">
                                 <ul>
-                                    <li><a href="/Dermaclin/concern/excessivebodyhair.html">Excessive body hair</a></li>
-                                    <li><a href="/Dermaclin/concern/lip-augmuntation.html">Lip augmentation</a></li>
-                                    <li><a href="/Dermaclin/concern/sweat.html">Sweat control</a></li>
-                                    <li><a href="/Dermaclin/aesthetic/dermalfillers.html">Dermal Fillers</a></li>
-                                    <li><a href="/Dermaclin/aesthetic/HIFU.html">HIFU</a></li>
-                                    <li><a href="/Dermaclin/aesthetic/PRP.html">PRP</a></li>
-                                    <li><a href="/Dermaclin/aesthetic/dermaroller.html">Derma Roller</a></li>
+                                    <li><a href="/concern/excessbody">Excessive body hair</a></li>
+                                    <li><a href="/concern/lipaugmuntation">Lip augmentation</a></li>
+                                    <li><a href="/concern/sweatcontrol">Sweat control</a></li>
+                                    <li><a href="/aesthetic/DermalFillers">Dermal Fillers</a></li>
+                                    <li><a href="/aesthetic/hifu">HIFU</a></li>
+                                    <li><a href="/aesthetic/diamond">PRP</a></li>
+                                    <li><a href="/aesthetic/DermaRoller">Derma Roller</a></li>
                                 </ul>
                             </div>
                         </Col>
-                        <Col>
+                        <Col md={3} sm={6} xs={6} lg={2}>
                             <div className="foot-manu-one">
                                 <ul>
                                     <li><a href="Dermaclin/dermaclin.html">Career</a></li>
@@ -95,11 +95,11 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col>
+                        <Col  md={3} sm={6} xs={6} lg={2}>
                             <div className="foot-manu">
                                 <ul>
-                                    <li># HM-125, Phase-3B1 Mohali,</li>
-                                    <li>Sector 60 Phase 3b 1, Mohali - 160059 (Near Rose Garden)</li><br />
+                                    <li># HM-125, Phase-3B1,</li>
+                                    <li>Sector 60 Mohali - 160059 (Near Rose Garden)</li><br />
                                     <li>
                                         <a href="tel:9465587840" class="g-anchor">
                                             <img src={telephone} alt="" width="15px" />
@@ -114,7 +114,7 @@ const Footer = () => {
                 </Container>
                 <Container>
                     <Row>
-                        <div class="col-md-12" style={{ background: "#E7E9E7",height:"40px" }}>
+                        <div class="col-md-12 copyright" style={{ background: "#E7E9E7",height:"40px" }}>
                             <p style={{ textAlign: "center", marginTop: "15px", color: "#000",}}>Design & Developed By <a
                                 href="/Dermaclin/" style={{ color: "#000", fontWeight: "600" }}
                                 target="_blank">Dermaclin</a></p>

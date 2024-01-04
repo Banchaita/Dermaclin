@@ -13,10 +13,13 @@ const About = () => {
       <Header />
       <TopNav />
       <AboutBanner />
-      <section class="experts-area g-sec-pad">
+      <section className="experts-area g-sec-pad">
         <Container>
           <Row>
-            <Col>
+            <div className="section-heading">
+              <h2 className="g-heading ed-heading client-exp banner-title mt-5">About Us</h2>
+            </div>
+            <Col xs={12} md={12} sm={12} lg={6}>
                 <p className='para-one'>
                   Welcome  to Dermaclin help people live healthy, happy &amp;confident.
                 </p>
@@ -39,7 +42,7 @@ const About = () => {
                   is our foremost priority.
                 </p>
           </Col>
-          <Col md="auto">
+          <Col xs={12} md={12} sm={12} lg={6}>
             <div>
               <QueryFrom/>
             </div>

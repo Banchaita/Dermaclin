@@ -35,7 +35,8 @@ const Experts = () => {
                 </a>
               </p>
             </Col>
-            <Col md="auto">
+            <Col xs={12} md={12} sm={12} lg={6}>
+
               <div class="doc-img-cont">
                 <img src={dr} alt style={{ width: "300px", borderRadius: '50rem' }} />
               </div>

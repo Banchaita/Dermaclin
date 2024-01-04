@@ -38,14 +38,14 @@ const HomeService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        {/* <button type='button'>Book an Apporment</button> */}
-                                        <div class="button-container-1">
-                                            <span class="mas">Book an Appointment</span>
-                                            <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container-app">
+                                            <a href="/Appointment">
+                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                            </a>
                                         </div>
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
-                                        <a href="http://"> Know More &nbsp;
+                                        <a href="/Aesthetic/PRP" className='knowmore'> Know More &nbsp;
                                             <img src={rightarrow} alt="" srcset="" width={20} />
                                         </a>
                                     </Col>
@@ -59,7 +59,7 @@ const HomeService = () => {
                     <Row className='home-service-row'>
 
                         <Col>
-                            <div className="service-info">
+                            <div className="service-info anti-area">
                                 <h3 class="sub-heading haf-lin-de">Derma Filler</h3>
                                 <p class="desc">
                                     Facial volume reduces as we begin to age. Dermal fillers are a minimally invasive treatment that fills
@@ -68,16 +68,17 @@ const HomeService = () => {
                                 </p>
                             </div>
 
-                            <div className="service-bottom-info">
+                            <div className="service-bottom-info ">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-1">
-                                            <span class="mas">Book an Appointment</span>
-                                            <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container-app">
+                                            <a href="/Appointment">
+                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                            </a>
                                         </div>
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
-                                        <a href="http://"> Know More &nbsp;
+                                        <a href="/Aesthetic/DermalFillers" className='knowmore'> Know More &nbsp;
                                             <img src={rightarrow} alt="" srcset="" width={20} />
                                         </a>
                                     </Col>
@@ -87,7 +88,7 @@ const HomeService = () => {
                         <Col>
                             <div className="service-info-img">
                                 <div className="img-box">
-                                    <img src={DermalFiller} alt="" srcset="" width={500} />
+                                    <img src={DermalFiller} alt="" srcset="" width={500} className='antiimg' />
                                     <div class="overlay"></div>
                                 </div>
                             </div>
@@ -99,7 +100,7 @@ const HomeService = () => {
                         <Col>
                             <div className="service-info-img">
                                 <div className="img-box">
-                                    <img src={Chemicalpeeling} alt="" srcset="" width={500} />
+                                    <img src={Chemicalpeeling} alt="" srcset="" width={500} className='hifuimg' />
                                     <div class="overlay"></div>
                                 </div>
                             </div>
@@ -119,13 +120,14 @@ const HomeService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-1">
-                                            <span class="mas">Book an Appointment</span>
-                                            <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container-app">
+                                            <a href="/Appointment">
+                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                            </a>
                                         </div>
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
-                                        <a href="http://"> Know More &nbsp;
+                                        <a href="/Aesthetic/ChemicalPeeling" className='knowmore'> Know More &nbsp;
                                             <img src={rightarrow} alt="" srcset="" width={20} />
                                         </a>
                                     </Col>
@@ -139,7 +141,6 @@ const HomeService = () => {
                     <div className="more">
                         <Link to="/service" class="nav-link active" aria-current="page">
                             <div class="button-container">
-                                <span class="mas">View More</span>
                                 <button id='work' type="button" name="Hover">View More</button>
                             </div>
                         </Link>

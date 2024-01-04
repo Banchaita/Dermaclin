@@ -4,7 +4,7 @@ import HomeService from '../components/Home-Service'
 import WhyChoose from '../components/WhyChoose'
 import Experts from '../components/Experts'
 import HAPPYCLIENT from '../components/HAPPYCLIENT'
-
+import Loader from '../components/Layout/Loader'
 
 
 const Home = () => {
