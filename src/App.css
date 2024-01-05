@@ -286,73 +286,65 @@ a{
 .service-bottom-info .knowmore:hover::before{
   width: 100%;
 }
-.service-bottom-info .button-container-app{
-  position: relative;
-  width: 250px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 8vh;
-  overflow: hidden;
-  border: 1px solid #fff;
-  font-weight: 300;
-  transition: 0.5s;
-  letter-spacing: 1px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
-}
-
-.service-bottom-info .button-container-app button {
-  width: 101%;
-  height: 100%;
-  font-weight: 300;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  border: none;
-  color: #000;
+button.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
-}
-
-.more .button-container {
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
   position: relative;
-  width: 250px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-  overflow: hidden;
-  border: 1px solid #000;
-  font-weight: 300;
-  transition: 0.5s;
-  letter-spacing: 1px;
-  border-radius: 8px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4), 0px 7px 13px -3px rgba(0, 0, 0, 0.3), inset 0px -3px 0px rgba(0, 0, 0, 0.2);
-
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 3rem;
 }
-
-.more .button-container button {
-  width: 101%;
-  height: 100%;
-  font-weight: 300;
-  font-size: 11px;
-  letter-spacing: 1px;
-  font-weight: bold;
-  background: #000;
-  -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-  mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
-  -webkit-mask-size: 7100% 100%;
-  mask-size: 7100% 100%;
-  border: none;
-  color: #fff;
+button.button-5 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
   cursor: pointer;
-  -webkit-animation: ani2 0.7s steps(70) forwards;
-  animation: ani2 0.7s steps(70) forwards;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 20%;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  margin-left: 38%;
 }
-.more .button-container button:hover {
-  -webkit-animation: ani 0.7s steps(70) forwards;
-  animation: ani 0.7s steps(70) forwards;
+.button-6:hover, .button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 /* whychosse */
@@ -1553,6 +1545,106 @@ section.home-services.g-sec-pad {
 .navbar-nav .nav-link {
   font-size: 18px;
 }
+button.button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+}
+button.button-5 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 50%;
+  border-radius: 5px;
+  margin-bottom: 3rem;
+  margin-left: 23%;
+}
+/* .service-bottom-info .button-container-app .button-6 {
+  align-items: center;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 500;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.service-bottom-info .button-container-app .button-6:hover,
+.service-bottom-info .button-container-app .button-6:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.service-bottom-info .button-container-app .button-6:hover {
+  transform: translateY(-1px);
+}
+
+.service-bottom-info .button-container-app .button-6:active {
+  background-color: #F0F0F1;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+} */
 
   .footer{
     background: #000;
@@ -1641,7 +1733,11 @@ section.home-services.g-sec-pad {
 }
 img.antiimg {
   position: absolute;
-  margin-top: -43rem;
+  margin-top: -47rem;
+  margin-left: 26px;
+}
+.service-bottom-info .knowmore{
+  display: none;
 }
 img.hifuimg {
   margin-top: -105px;
@@ -1914,8 +2010,11 @@ section.home-services.g-sec-pad {
 }
 img.antiimg {
   position: absolute;
-  margin-top: -39rem;
+  margin-top: -47rem;
   margin-left: 26px;
+}
+.service-bottom-info .knowmore{
+  display: none;
 }
 img.hifuimg {
   margin-top: -105px;
@@ -2462,9 +2561,13 @@ section.home-services.g-sec-pad {
 }
 img.antiimg {
   position: absolute;
-  margin-top: -39rem;
-  margin-left: 26px;
+  margin-top: -40rem;
+  margin-left: 2px;
 }
+.service-bottom-info .knowmore{
+  display: none;
+}
+
 img.hifuimg {
   margin-top: -105px;
 }

@@ -31,12 +31,12 @@ const Footer = () => {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="http://">
+                                        <a href="https://www.facebook.com/profile.php?id=61555295933020" target='blank'>
                                             <img src={facebook} alt="" srcset="" width={20} />
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="http://">
+                                    <a href="https://www.instagram.com/dermaclin_skin_care/" target='blank'>
                                             <img src={instagram} alt="" srcset="" width={20} />
                                         </a>
                                     </li>

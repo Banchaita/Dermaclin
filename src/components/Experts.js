@@ -15,7 +15,7 @@ const Experts = () => {
             <h2 className="ed-heading">Our Experts </h2>
           </div>
           <Row>
-            <Col className='dr-title'>
+            <Col className='dr-title'  xs={12} md={12} sm={12} lg={9}>
               <div className="section-heading">
                 <h2 className="g-heading">Dr.Shivani</h2>
               </div>
@@ -35,7 +35,7 @@ const Experts = () => {
                 </a>
               </p>
             </Col>
-            <Col xs={12} md={12} sm={12} lg={6}>
+            <Col xs={12} md={12} sm={12} lg={3}>
 
               <div class="doc-img-cont">
                 <img src={dr} alt style={{ width: "300px", borderRadius: '50rem' }} />

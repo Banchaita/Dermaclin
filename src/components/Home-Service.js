@@ -38,11 +38,10 @@ const HomeService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
-                                            </a>
-                                        </div>
+                                        <div class="button-container">
+                                        <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
+                                            </a>                                        </div>
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
                                         <a href="/Aesthetic/PRP" className='knowmore'> Know More &nbsp;
@@ -71,11 +70,10 @@ const HomeService = () => {
                             <div className="service-bottom-info ">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
-                                            </a>
-                                        </div>
+                                        <div class="button-container">
+                                        <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
+                                            </a>                                        </div>
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
                                         <a href="/Aesthetic/DermalFillers" className='knowmore'> Know More &nbsp;
@@ -119,10 +117,10 @@ const HomeService = () => {
 
                             <div className="service-bottom-info">
                                 <Row>
-                                    <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                    <Col>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
                                     </Col>
@@ -139,11 +137,12 @@ const HomeService = () => {
                     </Row>
 
                     <div className="more">
-                        <Link to="/service" class="nav-link active" aria-current="page">
-                            <div class="button-container">
-                                <button id='work' type="button" name="Hover">View More</button>
-                            </div>
-                        </Link>
+                        <div class="button-container">
+                            <a href="/service">
+                                <button class="button-5" role="button">View More</button>
+                            </a>
+                           
+                        </div>
                     </div>
                 </Container>
             </section >

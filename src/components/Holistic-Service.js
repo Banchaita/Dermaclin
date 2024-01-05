@@ -50,11 +50,12 @@ const HolisticService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
+
 
 
                                     </Col>
@@ -87,11 +88,12 @@ const HolisticService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
+
 
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
@@ -137,11 +139,12 @@ const HolisticService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
+
 
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
@@ -171,11 +174,12 @@ const HolisticService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
+
 
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
@@ -219,11 +223,12 @@ const HolisticService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
+
 
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
@@ -251,11 +256,12 @@ const HolisticService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
+
 
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
@@ -302,11 +308,12 @@ const HolisticService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
+
 
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
@@ -334,11 +341,12 @@ const HolisticService = () => {
                             <div className="service-bottom-info">
                                 <Row>
                                     <Col md={4}>
-                                        <div class="button-container-app">
-                                            <a href="/Appointment">
-                                                <button id='work' type="button" name="Hover">Book an Appointment</button>
+                                        <div class="button-container">
+                                            <a href="/appointment">
+                                            <button class="button-6" role="button">Book an Appointment</button>
                                             </a>
                                         </div>
+
 
                                     </Col>
                                     <Col md={{ span: 4, offset: 4 }}>
@@ -362,9 +370,7 @@ const HolisticService = () => {
 
                     <div className="more pb-4">
                         <div class="button-container">
-                            <button id='work' type="button" name="Hover" onClick={toggleServices}>
-                                {showServices ? 'View Less' : 'View More'}
-                            </button>
+                        <button class="button-5" role="button" onClick={toggleServices}>View More</button>
                         </div>
                     </div>
                 </Container>
